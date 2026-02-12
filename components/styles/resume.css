@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.form, .preview {
+  width: 50%;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+:root{
+  --bg-1: #f5fbfb;
+  --accent: #1f8a8a;
+  --accent-dark: #166f6f;
+  --muted: #55606a;
+  --card: #ffffff;
+}
+
+body{
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #f7fcfc 0%, #eef7f7 100%);
+  color: var(--muted);
+}
+
+#resume {
+  border: 1px solid rgba(31,138,138,0.18);
+  box-shadow: 0 6px 18px rgba(31,138,138,0.06);
+  padding: 24px;
+  background: var(--card);
+  border-radius: 8px;
+}
+
+.profile-photo{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(31,138,138,0.12);
+}
+.photo-wrap{ text-align: center; margin-bottom: 12px }
+
+.contact{ color: var(--muted); margin-bottom: 16px }
+
+.projects-list{ display: grid; gap: 12px; margin-top: 8px }
+.project-item{ padding: 10px; border-left: 4px solid var(--accent); background:#fbfdfd; border-radius:6px }
+
+.project-form{ border:1px dashed rgba(31,138,138,0.12); padding:8px; margin-bottom:8px; border-radius:6px }
+
+button{
+  padding: 8px 12px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+button:hover{ background: var(--accent-dark) }
+
+.form, .preview { width: 50%; }
+
+.form h3{ margin-top: 14px }
+
+/* Duration shown on its own line */
+.duration{
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
